@@ -29,10 +29,10 @@
     color: #f3989b !important
 }
 .materialize-red.lighten-2 {
-    background-color: #ee6e73 !important
+    background-color: #1E88E5 !important
 }
 .materialize-red-text.text-lighten-2 {
-    color: #ee6e73 !important
+    color: #1E88E5 !important
 }
 .materialize-red.lighten-1 {
     background-color: #ea454b !important
@@ -1870,7 +1870,7 @@ nav,
 blockquote {
     margin: 20px 0;
     padding-left: 1.5rem;
-    border-left: 5px solid #ee6e73
+    border-left: 5px solid #1E88E5
 }
 i {
     line-height: inherit
@@ -1918,7 +1918,7 @@ video.responsive-video {
     color: #fff
 }
 .pagination li.active {
-    background-color: #ee6e73
+    background-color: #1E88E5
 }
 .pagination li.disabled a {
     cursor: default;
@@ -2073,7 +2073,7 @@ ul.staggered-list li {
 }
 .page-footer {
     padding-top: 20px;
-    background-color: #ee6e73
+    background-color: #1E88E5
 }
 .page-footer .footer-copyright {
     overflow: hidden;
@@ -3224,7 +3224,7 @@ nav ul a span.badge {
 }
 nav {
     color: #fff;
-    background-color: #ee6e73;
+    background-color: #1E88E5;
     width: 100%;
     height: 56px;
     line-height: 56px
@@ -3977,7 +3977,7 @@ small {
 .tabs .tab a:hover,
 .tabs .tab a.active {
     background-color: transparent;
-    color: #ee6e73
+    color: #1E88E5
 }
 .tabs .tab.disabled a,
 .tabs .tab.disabled a:hover {
@@ -5769,12 +5769,12 @@ input[type=range]:focus::-ms-fill-upper {
 .table-of-contents a:hover {
     color: #a8a8a8;
     padding-left: 19px;
-    border-left: 1px solid #ee6e73
+    border-left: 1px solid #1E88E5
 }
 .table-of-contents a.active {
     font-weight: 500;
     padding-left: 18px;
-    border-left: 2px solid #ee6e73
+    border-left: 2px solid #1E88E5
 }
 .side-nav {
     position: fixed;
@@ -5954,7 +5954,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .side-nav .collapsible-body>ul:not(.collapsible)>li.active,
 .side-nav.fixed .collapsible-body>ul:not(.collapsible)>li.active {
-    background-color: #ee6e73
+    background-color: #1E88E5
 }
 .side-nav .collapsible-body>ul:not(.collapsible)>li.active a,
 .side-nav.fixed .collapsible-body>ul:not(.collapsible)>li.active a {
@@ -6568,7 +6568,7 @@ input[type=range]:focus::-ms-fill-upper {
     position: absolute;
     font-size: 1rem;
     border-radius: 50%;
-    background-color: #ee6e73;
+    background-color: #1E88E5;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;

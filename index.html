@@ -1,53 +1,64 @@
 <html>
-<head>
-    <title>Wilder Pereira</title>
+    <head>
+        <title>Wilder Pereira</title>
 
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+        <!-- Materialize CSS -->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- JavaScript for: jQuery, angular, materialize, and angular-materialize. All of which are needed. -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/angular-materialize.min.js"></script>
+        <!-- JavaScript for: jQuery, angular, materialize, and angular-materialize. All of which are needed. -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/angular-materialize.min.js"></script>
+        <script src="js/index.js"></script>
+        <!-- Your app -->
+        <script type="text/javascript" src="app.js"></script>
 
-    <!-- Your app -->
-    <script type="text/javascript" src="app.js"></script>
-</head>
-<body ng-app="materializeApp" ng-controller="BodyController">
-<main>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo-left">Wilder Pereira</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="projects.html">Projects</a></li>
-          </ul>
-        </div>
-    </nav>
-        
-    <div class="container">
-        <div class="row">
-        <div class="col s12 m4" ng-repeat="project in projects">
-          <div class="card" style="height: 400px !important">
-            <div class="card-image" style="height: 150px !important">
-              <img src="{{project.img}}">
-              <span class="card-title"></span>
+    </head>
+    <body ng-app="materializeApp" ng-controller="BodyController" class="dark-background">
+        <main>
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo-left hide-on-med-and-down">Wilder Pereira</a>
+                  <a href="#" data-activates="nav-drawer" class="button-collapse"></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                  </ul>
+                  <ul id="slide-out" class="side-nav">
+                    <li><div class="userView">
+                      <div class="background">
+                        <img src="img/header.jpg">
+                      </div>
+                      <a href="#!name"><span class="white-text name">Wilder Pereira</span></a>
+                      <a href="#!email"><span class="white-text email">wilder_roberto@hotmail.com</span></a>
+                    </div></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                  </ul>
+                  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+                
+            <div class="container">
+                    
             </div>
-            <div class="card-content">
-              <p>{{project.description}}</p>
-            </div>
-            <div class="card-action">
-              <a href="#{{project.url}}">This is a link</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</main>
-</body>
+        </main>
+        <footer class="page-footer no-padding">
+              <div class="footer-copyright">
+                <div class="container">
+                © 2017 Developed by Wilder Pereira
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+              </div>
+        </footer>
+    </body>
 </html>

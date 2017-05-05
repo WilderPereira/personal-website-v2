@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" ng-app="materializeApp">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -19,7 +20,7 @@
         <script type="text/javascript" src="app.js"></script>
 
     </head>
-    <body ng-app="materializeApp" ng-controller="BodyController" class="dark-background">
+    <body ng-controller="BodyController" class="dark-background">
         <nav>
               <div class="nav-wrapper">
                 <a href="#" class="brand-logo center hide-on-med-and-up">Wilder Pereira</a>
@@ -51,8 +52,7 @@
           </nav>
         <main>
             <section id="about">
-
-                <div class="row no-margin">
+                <div class="row margin">
                   <div class="section container card-panel bg-blue col l12 m12 s12">
                     <h3 class="sub-text">Hello, my name is</h3>
                     <h1 class="name">Wilder Pereira</h3>
@@ -60,34 +60,42 @@
                   </div>
                 </div>
 
-                <div class="row no-margin">
+                <div class="row margin">
                     <div class="section container card-panel bg-green col l12 m12 s12">
                         <h1 class="name"> < Developer /> </h3>
                         <h3 class="sub-text">Not a designer, as you can see</h3>
                     </div>
                 </div>
 
-                <div class="row no-margin">
+                <div class="row margin">
                     <div class="section container card-panel bg-light-red col l12 m12 s12">
-                        <h3 class="sub-text">And these are the technologies I can work with</h3>
+                        <h3 class="sub-text">These are the technologies I can work with</h3>
                         
-                        <div class="card-panel bg-light-red col m6 s12 l6">
+                        <div class="card-panel col m5 offset-m1 s12 l5 offset-l1">
                             <h2>Languages</h2>
                             <div class="divider"></div>
-                            <h5>Java</h3>
-                            <h5>Python</h3>
-                            <h5>Kotlin</h5>
-                            <h5>JavaScript</h3> 
-                            <h5>Golang</h3>                         
+                            <div ng-repeat="language in languages" class="row margin">
+                              <img src="{{language.icon}}" height="40" width="40">
+                              <h5 style="display: inline-block">{{language.description}}</h5>
+                              <div class="progress">
+                                  <div class="determinate" style="width: {{language.proficiency}}%"></div>
+                              </div>
+                            </div>
                         </div>
 
-                         <div class="card-panel bg-light-red col m6 s12 l6">
+                         <div class="card-panel col m5 s12 l5">
                             <h2>Databases</h2>
                             <div class="divider"></div>
                             <h5>Oracle</h3>
                             <h5>MySQL</h3>
                             <h5>SQLite</h3>
                             <h5>MongoDB</h3>                          
+                        </div>
+
+                        <div class="card-panel col m5 s12 l5">
+                            <h2>Other Stuff</h2>
+                            <div class="divider"></div>
+                            <h5>Firebase, Heroku, Rest API, Git, IBM Bluemix, Arduino</h3>                         
                         </div>
 
                     </div>

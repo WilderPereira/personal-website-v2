@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <title>Wilder Pereira</title>
 
         <!-- Materialize CSS -->
@@ -18,40 +20,84 @@
 
     </head>
     <body ng-app="materializeApp" ng-controller="BodyController" class="dark-background">
+        <nav>
+              <div class="nav-wrapper">
+                <a href="#" class="brand-logo center hide-on-med-and-up">Wilder Pereira</a>
+                <a href="#" class="brand-logo-left hide-on-med-and-down">Wilder Pereira</a>
+                <a href="#" data-activates="nav-drawer" class="button-collapse"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="assets/resume.pdf">Resume</a></li>
+                  <li><a href="education.html">Education</a></li>
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                </ul>
+                <ul id="slide-out" class="side-nav">
+                  <li><div class="userView">
+                    <div class="background">
+                      <img src="img/header.jpg">
+                    </div>
+                    <a href="#!name"><span class="white-text name">Wilder Pereira</span></a>
+                    <a href="#!email"><span class="white-text email">wilder_roberto@hotmail.com</span></a>
+                  </div></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="assets/resume.pdf">Resume</a></li>
+                  <li><a href="education.html">Education</a></li>
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+              </div>
+          </nav>
         <main>
-            <nav>
-                <div class="nav-wrapper">
-                  <a href="#" class="brand-logo-left hide-on-med-and-down">Wilder Pereira</a>
-                  <a href="#" data-activates="nav-drawer" class="button-collapse"></a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                  </ul>
-                  <ul id="slide-out" class="side-nav">
-                    <li><div class="userView">
-                      <div class="background">
-                        <img src="img/header.jpg">
-                      </div>
-                      <a href="#!name"><span class="white-text name">Wilder Pereira</span></a>
-                      <a href="#!email"><span class="white-text email">wilder_roberto@hotmail.com</span></a>
-                    </div></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                  </ul>
-                  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            <section id="about">
+
+                <div class="row no-margin">
+                  <div class="section container card-panel bg-blue col l12 m12 s12">
+                    <h3 class="sub-text">Hello, my name is</h3>
+                    <h1 class="name">Wilder Pereira</h3>
+                    <h3 class="sub-text">And I'm a</h3>
+                  </div>
                 </div>
-            </nav>
-                
-            <div class="container">
-                    
-            </div>
+
+                <div class="row no-margin">
+                    <div class="section container card-panel bg-green col l12 m12 s12">
+                        <h1 class="name"> < Developer /> </h3>
+                        <h3 class="sub-text">Not a designer, as you can see</h3>
+                    </div>
+                </div>
+
+                <div class="row no-margin">
+                    <div class="section container card-panel bg-light-red col l12 m12 s12">
+                        <h3 class="sub-text">And these are the technologies I can work with</h3>
+                        
+                        <div class="card-panel bg-light-red col m6 s12 l6">
+                            <h2>Languages</h2>
+                            <div class="divider"></div>
+                            <h5>Java</h3>
+                            <h5>Python</h3>
+                            <h5>Kotlin</h5>
+                            <h5>JavaScript</h3> 
+                            <h5>Golang</h3>                         
+                        </div>
+
+                         <div class="card-panel bg-light-red col m6 s12 l6">
+                            <h2>Databases</h2>
+                            <div class="divider"></div>
+                            <h5>Oracle</h3>
+                            <h5>MySQL</h3>
+                            <h5>SQLite</h3>
+                            <h5>MongoDB</h3>                          
+                        </div>
+
+                    </div>
+                </div>    
+
+            </section>
+
         </main>
+
+
         <footer class="page-footer no-padding">
               <div class="footer-copyright">
                 <div class="container">
